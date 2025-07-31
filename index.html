@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<menu id="menu">
+</menu>
+<body>
+    <main>
+        <h1><b>Suas Notas</b></h1>
+        <div class="notassalvas">
+           <h4><b><u>Suas Notas Salvas Serão Salvas No Campo Abaixo</u></b></h4>
+        </div>
+
+        <div class="digitarNota" style="display: none;">
+        <textarea id="input" cols="30" rows="10"></textarea>
+        </div>
+    </main>
+
+    <div class="cadastro" style="display: none;">
+        <h2>Não Perca suas Notas, Salve em sua Conta</h2>
+        <input type="text" id="inputNome">
+        <button id="btnCadastroConfirma">Salvar</button>
+    </div>
+
+    <div class="criarNota">
+        <button id="btnCriaNota" onclick="criarNota()"><img src="imagens/btnadd.png"></button>
+        <button id="btnCriaNotaVolta" onclick="criarNota()" style="display: none;"><img src="imagens/save.png"></button>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+
+</html>
