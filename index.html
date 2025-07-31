@@ -11,12 +11,18 @@
 <body>
     <main>
         <h1><b>Suas Notas</b></h1>
+        <button id="removeCache" onclick="removeCache()">Remover</button>
+
         <div class="notassalvas">
            <h4><b><u>Suas Notas Salvas Serão Salvas No Campo Abaixo</u></b></h4>
+           <div id="notasCriadas"><b>Crie sua Primeira Nota</b>
+            
+           </div>
         </div>
 
         <div class="digitarNota" style="display: none;">
-        <textarea id="input" cols="30" rows="10"></textarea>
+            <input type="text" placeholder="titulo">
+        <textarea id="input" cols="30" rows="10" placeholder="Escreva Algo Aqui..."></textarea>
         </div>
     </main>
 
@@ -28,10 +34,10 @@
 
     <div class="criarNota">
         <button id="btnCriaNota" onclick="criarNota()"><img src="imagens/btnadd.png"></button>
-        <button id="btnCriaNotaVolta" onclick="criarNota()" style="display: none;"><img src="imagens/save.png"></button>
+        <button id="btnCriaNotaVolta" onclick="salvaNota()" style="display: none;"><img src="imagens/save.png"></button>
     </div>
     
 </body>
 <script src="index.js"></script>
-
+<script src="storage.js"></script>
 </html>

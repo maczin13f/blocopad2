@@ -27,13 +27,13 @@ nav img {
 #userProfile {
     margin-top: -2%;
     border: solid black;
-    height: 2em;
+    height: 1em;
+    width: 1em;
     padding: 3px;
     border-radius: 30px;
     font-size: 40px;
+    text-align: center;
 }
-
-#
 
 .cadastro {
     display: flex;
@@ -98,7 +98,15 @@ main {
     width: 80%;
 }
 
+#notasCriadas {
+    border: solid black;
+    background: rgb(227, 199, 146);
 
+}
+
+#notasCriadas p {
+    text-decoration: underline 2px;
+}
 
 
 }
