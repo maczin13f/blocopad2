@@ -10,14 +10,15 @@ menu {
 }
 
 #logoimg {
+    position: relative;
     width: 25%;
+    right: 15%;
 }
 
 nav {
     display: flex;
     gap: 20px;
     margin-top: 7%;
-    margin-left: 10%;
 }
 
 nav img {
@@ -33,6 +34,12 @@ nav img {
     border-radius: 30px;
     font-size: 40px;
     text-align: center;
+}
+
+.firstLetter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ position: relative;
+ top: -5%;
 }
 
 .cadastro {
