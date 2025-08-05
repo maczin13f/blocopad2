@@ -1,45 +1,81 @@
 @media screen and (max-width: 768px) {
 
 body {
-    background: white;
+    background: #f5f5f5;
 }
 
 menu {
     display: flex;
-    background: linear-gradient(to right, white, rgb(222, 218, 218));
+    background: #f5f5f5;
+    border: solid black;
+    border-radius: 30px;
 }
 
 #logoimg {
-    position: relative;
-    width: 25%;
-    right: 15%;
+width: 35%;
+margin-left: -10%;
 }
 
 nav {
     display: flex;
-    gap: 20px;
-    margin-top: 7%;
+    align-items: center;
+    margin-left: 8%;
 }
 
 nav img {
-    width: 30px;
+    width: 55%;
 }
 
 #userProfile {
-    margin-top: -2%;
+    margin-right: 10%;
     border: solid black;
-    height: 1em;
-    width: 1em;
-    padding: 3px;
-    border-radius: 30px;
-    font-size: 40px;
+    border-radius: 40px;
+    padding: 20px;
+    width: 100%;
     text-align: center;
 }
 
 .firstLetter {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- position: relative;
- top: -5%;
+font-size: 40px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.digitarNota {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin-top: 7%;
+    border: solid black;
+    padding: 30px;
+    border-radius: 40px;
+
+}
+
+#tituloNota {
+   width: 90%;
+   height: 3em;
+   border: solid black;
+   border-radius: 40px;
+   text-align: center;
+   font-size: 15px;
+}
+
+#tituloNota::placeholder {
+    text-align: center;
+}
+
+#input {
+    border: solid black;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: 20px;
+}
+
+#input::placeholder {
+    text-align: center;
 }
 
 .cadastro {

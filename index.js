@@ -2,10 +2,10 @@ const menu = document.getElementById('menu');
 
 menu.innerHTML = `
 <img src="imagens/logo.png" id="logoimg">
+<hr class='divisoria'>
     <nav>
         <label onclick='paginaInicial()'><img src="imagens/notas.png"></label>
         <a href="notas.html#fav"><img src="imagens/fav.png"></a>
-        <a href="config.html"><img src="imagens/config.png"></a>
         <div id="userProfile"><img src='imagens/perfil.png'></div>
     </nav>
 `;
@@ -51,6 +51,12 @@ userProfile.addEventListener('click', function () {
   document.querySelector('main').style.filter = 'blur(5px)';
   cadastroDiv.style.display = '';
 });
+
+input.addEventListener('keydown', function(eventEnter){
+  if (eventEnter.key === 'Enter') {
+  salvaNota()
+  }
+})
 
 
 btnSalvaNome.addEventListener('click', function () {
